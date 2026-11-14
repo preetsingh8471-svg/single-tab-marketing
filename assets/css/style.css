@@ -240,19 +240,7 @@ button {
   max-width: 840px;
 }
 
-.pill {
-  display: inline-block;
-  padding: 9px 20px;
-  border-radius: 999px;
-  color: var(--sky-dark);
-  font-size: 13px;
-  font-weight: 700;
-  letter-spacing: 0.03em;
-  box-shadow: var(--neu-in-sm);
-}
-
 .hero__title {
-  margin-top: 26px;
   font-size: clamp(36px, 6vw, 64px);
   line-height: 1.1;
   font-weight: 800;
@@ -463,6 +451,41 @@ button {
 .step p {
   color: var(--muted);
   font-size: 14px;
+}
+
+/* About page */
+.page-hero {
+  padding: 90px 0 40px;
+  text-align: center;
+}
+
+.page-hero__inner {
+  max-width: 720px;
+}
+
+.page-hero .section__title {
+  font-size: clamp(34px, 5vw, 54px);
+}
+
+.cta {
+  text-align: center;
+  padding: 56px 32px;
+  border-radius: 32px;
+  box-shadow: var(--neu-lg);
+}
+
+.cta .section__text {
+  max-width: 520px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.cta__actions {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 18px;
 }
 
 /* Client slider */
