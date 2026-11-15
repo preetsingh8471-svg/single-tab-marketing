@@ -331,9 +331,14 @@ button {
 
 /* Service cards */
 .cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
+}
+
+.cards > .card {
+  flex: 0 0 calc((100% - 60px) / 3);
 }
 
 .card {
@@ -771,8 +776,8 @@ button {
 }
 
 @media (max-width: 991px) {
-  .cards {
-    grid-template-columns: repeat(2, 1fr);
+  .cards > .card {
+    flex-basis: calc((100% - 30px) / 2);
   }
 
   .about,
@@ -888,8 +893,11 @@ button {
   }
 
   .cards {
-    grid-template-columns: 1fr;
     gap: 24px;
+  }
+
+  .cards > .card {
+    flex-basis: 100%;
   }
 
   .card {
